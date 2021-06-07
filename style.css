@@ -1,0 +1,326 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Granjon;
+    src: url("/Fonts/granjon-small-caps-old-style-figures.otf");
+}
+
+@font-face {
+    font-family: SwissBold;
+    src: url("/Fonts/swiss-721-bold-bt-70711.ttf");
+}
+
+@font-face {
+    font-family: SwissThin;
+    src: url("/Fonts/swiss-721-light-bt.ttf");
+}
+body
+{
+    background-color: #fff;
+    font-family: Granjon;
+}
+
+/* CLASS=BODY */
+
+.body
+{
+    position: fixed;
+    width: 100%;
+}
+
+/* NAV */
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 5vh;
+    padding: 20px;
+}
+
+nav .name,
+nav .portfolio
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .numbers span
+{
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    margin: 0 5px;
+}
+
+/* MENU */
+
+.menu
+{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu .titre
+{
+    font-size: 80px;
+}
+
+.menu .travaux
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .travaux span
+{
+    font-size: 80px;
+    cursor: pointer;
+    color: black;
+}
+
+.menu .travaux span:active
+{
+    border-bottom: 7px solid black;
+}
+
+
+.menu .travaux .span1
+{
+    transform: skew(-10deg);
+}
+
+.menu .travaux a .span1:hover
+{
+    transform: skew(10deg);
+}
+
+.menu .travaux a .span2:hover
+{
+    transform: skew(-10deg);
+}
+
+/* SEC 2 */
+
+.section2
+{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(255, 255, 255, 0); */
+}
+
+.works
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(180, 179, 179, 0.171); */
+}
+
+.works a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im1, .im2, .im3, .im4, .im5, .im6, .im7
+{
+    /* position: absolute;
+    height: 70vh;
+    min-width: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fff; */
+}
+
+.im1 span, .im2 span, .im3 span, .im4 span, .im5 span, .im6 span, .im7 span
+{
+    color: white;
+    font-size: 80px;
+    position: absolute;
+}
+
+
+.im1 img,
+.im2 img,
+.im3 img,
+.im4 img,
+.im5 img,
+.im6 img,
+.im7 img
+{
+    position: relative;
+    width: 80%;
+    transition: 1s ease-in-out;
+
+    cursor: pointer;
+}
+
+.im1 span,
+.im2 span,
+.im3 span,
+.im4 span,
+.im5 span,
+.im6 span,
+.im7 span
+{
+    transition: 1s ease-in-out;
+}
+
+.im1 img:hover,
+.im2 img:hover,
+.im3 img:hover,
+.im4 img:hover,
+.im5 img:hover,
+.im6 img:hover,
+.im7 img:hover
+{
+    transform: scale(1.2);
+}
+
+.im1 span:hover,
+.im2 span:hover,
+.im3 span:hover,
+.im4 span:hover,
+.im5 span:hover,
+.im6 span:hover,
+.im7 span:hover
+{
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.sectionfoot
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-top: 2px solid black;
+}
+
+.sectionfoot .invi
+{
+    height: 50px;
+}
+
+
+.sectionfoot .container
+{
+    display: flex;
+    min-height: 80vh;
+    width: 90%;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.sectionfoot .container .portfolios
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionfoot .contacts
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-left: 2px solid black;
+    min-height: 80vh;
+}
+
+.sectionfoot h3
+{
+    font-size: 70px;
+    border-bottom: 2px solid black;
+    padding: 20px 20px 0 20px;
+    font-family: SwissBold;
+}
+
+.sectionfoot .portfolios span
+{
+    font-size: 30px;
+    margin: 20px 0 0 20px;
+    font-family: SwissThin;
+}
+
+.sectionfoot .contacts span
+{
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+    font-family: SwissThin;
+}
+
+.sectionfoot .contacts .reseaux
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 30px 20px;
+}
+
+.sectionfoot .contacts .reseaux a
+{
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+}
+
+.sectionfoot .copyright
+{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.sectionfoot .copyright span
+{
+    font-size: 20px;
+    font-family: SwissThin;
+}
+    
+
+
+
+/* ----------- RESPONSIVE ----------- */
+
+@media (max-width: 675px) {
+    .works span 
+    {
+        font-size: 40px;
+    }   
+}
+
+@media (max-width: 500px) {
+    .sectionfoot h3
+    {
+        font-size: 40px;    }
+}
+
+@media (max-width: 350px) {
+
+    .sectionfoot .copyright span
+    {
+        font-size: 15px;
+    }
+}
